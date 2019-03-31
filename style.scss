@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Londrina Shadow', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero {
+  background-image: url('./assets/mandle-01.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.about {
+  background-color: black;
+  height: 90vh;
+  // background-repeat: no-repeat;
+  // background-size: auto;
+  // display: flex;
+
+  & article {
+    // border: 2px solid white;
+    background-color: rgba(0,0,0,0.6);
+    // max-height: 300px;
+    max-width: 700px;
+    margin: auto;
+    align-items: center;
+    padding: 100px;
+  }
+}
+
+.project-01 {
+
+  & article {
+    border: 2px solid white;
+  }
+}
+
+.project-03 {
+  background-image: url('./assets/mandle-03.jpg');
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
