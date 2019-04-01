@@ -3,33 +3,129 @@
   font-family: 'IBM Plex Sans', sans-serif;
   outline: none;
 }
+body,html {
+  margin:0;
+  padding:0;
+  color: #fff;
 
-html {
-  scroll-behavior: smooth;
 }
+
+// html {
+//   scroll-behavior: smooth;
+// }
 
 h1, h2, h3, h4 {
   font-family: 'Londrina Shadow', sans-serif;
 }
 
-body {
-  background-color: #000;
-  color: #fff;
+
+// == PARALLAX ==
+
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+}
+//
+// .parallax::after {
+//   /* Display and position the pseudo-element */
+//   content: " ";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//
+//   /* Move the pseudo-element back away from the camera,
+//    * then scale it back up to fill the viewport.
+//    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+//   transform: translateZ(-1px) scale(1.5);
+//   /* Force the background image to fill the whole element. */
+//   background-size: 100%;
+//   /* Keep the image from overlapping sibling elements. */
+//   z-index: -1;
+// }
+//
+// /* The styling for the static div. */
+// .static {
+//   background: red;
+// }
+//
+// /* Sets the actual background images to adorable kitties. This part is crucial. */
+// .bg1::after {
+//   background-image: url('https://placekitten.com/g/900/700');
+// }
+//
+// .bg2::after {
+//   background-image: url('https://placekitten.com/g/800/600');
+// }
+//
+// .mandelbrot-04::after {
+//   background-image: url('./assets/mandel-03.jpg');
+// }
+
+
+
+
+
+
+.parallax {
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero {
-  background-image: url('./assets/mandle-01.jpg');
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: auto;
+  background-image: url('./assets/mandel-01.jpg');
+}
+
+.mandelbrot-02 {
+  background-image: url('./assets/mandel-02.jpg');
+}
+.mandelbrot-03 {
+  background-image: url('./assets/mandel-03.jpg');
+}
+.mandelbrot-04 {
+  background-image: url('./assets/mandel-04.jpeg');
+}
+
+
+
+
+
+// ========== TEXT
+
+article {
+  // border: 2px solid white;
+  background-color: rgba(0,0,0,0.6);
+  // max-height: 300px;
+  max-width: 700px;
+  margin: auto;
+  align-items: center;
+  padding: 100px;
 }
 
 .about {
-  background-color: black;
-  height: 90vh;
-  // background-repeat: no-repeat;
-  // background-size: auto;
-  // display: flex;
 
   & article {
     // border: 2px solid white;
@@ -40,18 +136,4 @@ body {
     align-items: center;
     padding: 100px;
   }
-}
-
-.project-01 {
-
-  & article {
-    border: 2px solid white;
-  }
-}
-
-.project-03 {
-  background-image: url('./assets/mandle-03.jpg');
-  height: 90vh;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
