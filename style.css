@@ -6,10 +6,25 @@
 body, html {
   margin: 0;
   padding: 0;
-  color: #fff; }
+  color: #fff;
+  background-color: white; }
 
-h1, h2, h3, h4 {
-  font-family: 'Londrina Shadow', sans-serif; }
+html {
+  scroll-behavior: smooth; }
+
+h1, h2 {
+  font-family: 'Poiret One', sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.7rem; }
+
+header, footer {
+  background-color: black; }
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
@@ -26,7 +41,8 @@ section {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh; }
+  height: 50vh;
+  display: flex; }
 
 .parallax {
   /* Full height */
@@ -41,7 +57,8 @@ section {
   background-image: url("./assets/mandel-01.jpg"); }
 
 .mandelbrot-02 {
-  background-image: url("./assets/mandel-02.jpg"); }
+  background-image: url("./assets/mandel-02.jpg");
+  max-height: 60vh; }
 
 .mandelbrot-03 {
   background-image: url("./assets/mandel-03.jpg"); }
@@ -49,17 +66,10 @@ section {
 .mandelbrot-04 {
   background-image: url("./assets/mandel-04.jpeg"); }
 
-article {
+article, .name {
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 700px;
-  margin: auto;
-  align-items: center;
-  padding: 100px; }
-
-.about article {
-  background-color: rgba(0, 0, 0, 0.6);
-  max-width: 700px;
-  margin: auto;
+  margin: 20px auto;
   align-items: center;
   padding: 100px; }
 
