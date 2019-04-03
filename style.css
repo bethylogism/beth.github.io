@@ -7,7 +7,8 @@ body, html {
   margin: 0;
   padding: 0;
   color: #fff;
-  background-color: black; }
+  background-color: black;
+  text-align: center; }
 
 html {
   scroll-behavior: smooth; }
@@ -63,7 +64,7 @@ section {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 50vh;
+  height: 60vh;
   display: flex; }
 
 article, .name {
@@ -77,11 +78,9 @@ article, .name {
   max-height: 400px; }
 
 .about article {
-  display: flex-wrap;
-  background-color: blue; }
+  display: flex-wrap; }
   .about article h1 {
-    flex-grow: 1;
-    background-color: red; }
+    flex-grow: 1; }
   .about article .photo-text {
     display: flex; }
     .about article .photo-text img {
@@ -91,7 +90,6 @@ article, .name {
       margin: 10 5px; }
     .about article .photo-text p {
       flex-grow: 0.5;
-      background-color: yellow;
       margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */

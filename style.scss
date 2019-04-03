@@ -9,6 +9,7 @@ body,html {
   color: #fff;
   background-color: black;
   // background: linear-gradient(70deg, white, #F69100, #1E2092, #000);
+  text-align: center;
 
 
 }
@@ -84,7 +85,7 @@ section {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 50vh;
+  height: 60vh;
   display: flex;
 }
 
@@ -106,10 +107,8 @@ article, .name {
 .about {
   article {
     display: flex-wrap;
-    background-color: blue;
     h1 {
       flex-grow: 1;
-      background-color: red;
     }
     .photo-text {
       display: flex;
@@ -121,7 +120,6 @@ article, .name {
       }
       p {
         flex-grow: 0.5;
-        background-color: yellow;
         margin: 10px;
       }
     }
