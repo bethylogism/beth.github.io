@@ -7,9 +7,9 @@ body,html {
   margin: 0;
   padding: 0;
   color: #fff;
-  // background-color: black;
+  background-color: black;
   // background: linear-gradient(70deg, white, #F69100, #1E2092, #000);
-  background-color: white;
+
 
 }
 
@@ -52,13 +52,6 @@ header, footer {
   perspective: 2px;
 }
 
-section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 50vh;
-  display: flex;
-}
 
 .parallax {
   // display: flex;
@@ -87,32 +80,50 @@ section {
   background-image: url('./assets/mandel-04.jpeg');
 }
 
-
-
-
-
-// ========== TEXT
+section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 50vh;
+  display: flex;
+}
 
 article, .name {
   // border: 2px solid white;
   background-color: rgba(0,0,0,0.6);
   // max-height: 300px;
   max-width: 700px;
-  margin: 20px auto;
-  align-items: center;
+  margin: auto auto;
   padding: 100px;
+  justify-content: center;
   // position: relative;
 }
 
-// .about {
-//
-//   & article {
-//     // border: 2px solid white;
-//     background-color: rgba(0,0,0,0.6);
-//     // max-height: 300px;
-//     max-width: 700px;
-//     margin: auto;
-//     align-items: center;
-//     padding: 100px;
-//   }
-// }
+.name {
+  max-height: 400px;
+}
+
+.about {
+  article {
+    display: flex-wrap;
+    background-color: blue;
+    h1 {
+      flex-grow: 1;
+      background-color: red;
+    }
+    .photo-text {
+      display: flex;
+      img {
+        max-height: 100px;
+        max-width: 100px;
+        border-radius: 100%;
+        margin: 10 5px;
+      }
+      p {
+        flex-grow: 0.5;
+        background-color: yellow;
+        margin: 10px;
+      }
+    }
+  }
+}

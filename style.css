@@ -7,7 +7,7 @@ body, html {
   margin: 0;
   padding: 0;
   color: #fff;
-  background-color: white; }
+  background-color: black; }
 
 html {
   scroll-behavior: smooth; }
@@ -37,13 +37,6 @@ header, footer {
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 2px; }
 
-section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 50vh;
-  display: flex; }
-
 .parallax {
   /* Full height */
   height: 100%;
@@ -66,11 +59,39 @@ section {
 .mandelbrot-04 {
   background-image: url("./assets/mandel-04.jpeg"); }
 
+section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 50vh;
+  display: flex; }
+
 article, .name {
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 700px;
-  margin: 20px auto;
-  align-items: center;
-  padding: 100px; }
+  margin: auto auto;
+  padding: 100px;
+  justify-content: center; }
+
+.name {
+  max-height: 400px; }
+
+.about article {
+  display: flex-wrap;
+  background-color: blue; }
+  .about article h1 {
+    flex-grow: 1;
+    background-color: red; }
+  .about article .photo-text {
+    display: flex; }
+    .about article .photo-text img {
+      max-height: 100px;
+      max-width: 100px;
+      border-radius: 100%;
+      margin: 10 5px; }
+    .about article .photo-text p {
+      flex-grow: 0.5;
+      background-color: yellow;
+      margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */
