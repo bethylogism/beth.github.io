@@ -29,7 +29,10 @@ header, footer {
 
 a {
   text-decoration: none;
-  color: cornflowerblue; }
+  color: #fff; }
+  a:hover {
+    color: rgba(139, 206, 241, 0.9);
+    font-size: 1.05em; }
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.

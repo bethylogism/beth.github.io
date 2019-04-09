@@ -1,3 +1,4 @@
+$primary: #fff;
 * {
   box-sizing: border-box;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -6,7 +7,7 @@
 body,html {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: $primary;
   background-color: black;
   // background: linear-gradient(70deg, white, #F69100, #1E2092, #000);
   text-align: center;
@@ -25,7 +26,7 @@ h1, h2 {
   text-align: center;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2rem
 }
 
 h2 {
@@ -38,7 +39,11 @@ header, footer {
 
 a {
   text-decoration: none;
-  color: cornflowerblue;
+  color: $primary;
+  &:hover {
+    color: rgba(139, 206, 241, 0.9);
+    font-size: 1.05em;
+  }
 }
 
 
