@@ -47,7 +47,7 @@ a {
 
 .parallax {
   /* Full height */
-  height: 100%;
+  height: 75vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -55,17 +55,19 @@ a {
   background-size: cover; }
 
 .hero {
-  background-image: url("./assets/mandel-01.jpg"); }
+  background-image: url("./assets/mandel-01.jpg");
+  height: 100vh; }
 
 .mandelbrot-02 {
   background-image: url("./assets/mandel-02.jpg");
-  max-height: 60vh; }
+  max-height: 75vh; }
 
 .mandelbrot-03 {
   background-image: url("./assets/mandel-03.jpg"); }
 
 .mandelbrot-04 {
-  background-image: url("./assets/mandel-04.jpeg"); }
+  background-image: url("./assets/mandel-04.jpeg");
+  height: 95vh; }
 
 section {
   display: flex;
