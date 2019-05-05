@@ -3,15 +3,12 @@
   font-family: 'IBM Plex Sans', sans-serif;
   outline: none; }
 
-body, html {
+body {
   margin: 0;
   padding: 0;
   color: #fff;
   background-color: black;
   text-align: center; }
-
-html {
-  scroll-behavior: smooth; }
 
 h1, h2 {
   font-family: 'Poiret One', sans-serif;
@@ -29,7 +26,7 @@ header, footer {
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #fdf4b9; }
   a:hover {
     color: rgba(139, 206, 241, 0.9);
     font-size: 1.05em; }
@@ -71,9 +68,9 @@ a {
 
 section {
   display: flex;
-  /* Needed for children to be absolutely positioned relative to the parent. */
+  /* Children need be absolutely positioned relative to the parent. */
   position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  /* The height of the container must be set */
   height: 50%; }
 
 article, .name {

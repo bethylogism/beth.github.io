@@ -1,27 +1,22 @@
-$primary: #fff;
+$primary: rgb(253, 244, 185);
+$secondary:rgba(139, 206, 241, 0.9);
 * {
   box-sizing: border-box;
   font-family: 'IBM Plex Sans', sans-serif;
   outline: none;
 }
-body,html {
+
+body {
   margin: 0;
   padding: 0;
-  color: $primary;
+  color: #fff;
   background-color: black;
   // background: linear-gradient(70deg, white, #F69100, #1E2092, #000);
   text-align: center;
-
-
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 h1, h2 {
   font-family: 'Poiret One', sans-serif;
-  // background-color: black;
   text-transform: uppercase;
   text-align: center;
 }
@@ -41,7 +36,7 @@ a {
   text-decoration: none;
   color: $primary;
   &:hover {
-    color: rgba(139, 206, 241, 0.9);
+    color: $secondary;
     font-size: 1.05em;
   }
 }
@@ -95,14 +90,10 @@ a {
 
 section {
   display: flex;
-  /* Needed for children to be absolutely positioned relative to the parent. */
+  /* Children need be absolutely positioned relative to the parent. */
   position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  /* The height of the container must be set */
   height: 50%;
-    // @media screen and (max-height: 700px) {
-    //   min-height: 50%;
-    // }
-
 }
 
 article, .name {
