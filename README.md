@@ -2,4 +2,6 @@
 
 `open index.html`
 
-Go.
+`sass --watch style.scss style.css`
+
+Et.. C'est le tout.
