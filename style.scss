@@ -1,5 +1,5 @@
-$primary: rgb(253, 244, 185);
-$secondary:rgba(139, 206, 241, 0.9);
+$primary: rgba(139, 206, 241, 0.9);
+$secondary: rgba(44, 156, 216, 0.9);
 * {
   box-sizing: border-box;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -13,38 +13,45 @@ body {
   background-color: black;
   // background: linear-gradient(70deg, white, #F69100, #1E2092, #000);
   text-align: center;
+  // line-height: 1.4em;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Poiret One', sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 h1 {
-  font-size: 2rem
+  font-size: 2rem;
 }
 
 h2 {
   font-size: 1.7rem;
 }
 
-header, footer {
+header,
+footer {
   background-color: black;
 }
 
 a {
   text-decoration: none;
   color: $primary;
+  line-height: 1.2em;
   &:hover {
     color: $secondary;
     font-size: 1.05em;
+    line-height: 1.2em;
   }
 }
 
+.tiny {
+  font-size: 0.7em;
+  line-height: 2em;
+}
 
 // ***** PARALLAX *******
-
-
 
 .wrapper {
   /* The height needs to be set to a fixed value for the effect to work.
@@ -58,13 +65,12 @@ a {
   perspective: 2px;
 }
 
-
 .parallax {
   // display: flex;
   /* Full height */
   height: 75vh;
 
-  /* Create the parallax scrolling effect */
+  /* parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,32 +93,43 @@ a {
   background-image: url('./assets/mandel-04.jpeg');
   height: 95vh;
 }
+.half-height {
+  height: 50vh;
+}
 
 section {
   display: flex;
   /* Children need be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container must be set */
-  height: 50%;
+  // height: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
-article, .name {
-  // border: 2px solid white;
-  background-color: rgba(0,0,0,0.6);
-  // max-height: 300px;
+article {
   max-width: 700px;
-  margin: auto auto;
-  padding: 100px;
-  @media screen and (max-width: 700px) {
-    padding: 10px;
-  }
-  // justify-content: center;
+  justify-content: center;
+}
+.black-box {
+  // border: 2px solid blue;
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  padding: 15px;
+  // @media screen and (max-width: 750px) {
+  //   padding: 10px;
+  //   min-height: fit-content;
+  // }
 }
 
-.name {
-  max-height: 400px;
-  @media screen and (max-width: 500px) {
-     height: 80vh;
+.padded-room {
+  // border: 2px dashed orange;
+  padding: 100px;
+  // max-height: 400px;
+  @media screen and (max-width: 750px) {
+    // max-height: 90vh;
+    // max-height: 100vh;
+    display: block;
   }
 }
 
@@ -122,16 +139,15 @@ article, .name {
     h1 {
       flex-grow: 1;
     }
-    .photo-text {
+    .side-by-side {
       display: flex;
+      padding-bottom: 2rem;
       @media screen and (max-width: 700px) {
         display: block;
       }
       img {
-        max-height: 100px;
-        max-width: 100px;
         border-radius: 100%;
-        margin: 10 5px;
+        margin: 0 10px;
       }
       p {
         flex-grow: 0.5;

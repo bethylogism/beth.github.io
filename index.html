@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/198/woman-elf_1f9dd-200d-2640-fe0f.png"/>
 
     </script>
@@ -18,23 +19,43 @@
     <main class="wrapper">
 
       <section class="hero parallax">
-        <div class="name">
+        <div class="black-box padded-room">
           <h1>Beth Swingler</h1>
           <h2>Developer</h2>
            Full-stack developer | Former neuroscientist | Part-time philosopher
-          <h1 title="Visit my GitHub"><a href="https://github.com/laceswingybethler"><i class="devicon-github-plain-wordmark"></i></a></h1>
+           <h1>
+            <span title="Visit my GitHub"><a href="https://github.com/bethylogism/"><i class="devicon-github-plain-wordmark"></i></a></span>
+            <span title="LinkedIn" alt="visit my linkedin"><a href="https://www.linkedin.com/in/bethswingler/"><i class="devicon-linkedin-plain"></i></a></span>
+           </h1>
+
         </div>
       </section>
 
-      <!-- <h1>Test</h1> -->
       <section class="about static">
-        <article>
+        <article class="black-box">
           <h1>About Me </h1>
-          <div class="photo-text">
-            <img src="./assets/beth_face.jpg" alt="Beth Swingler" class="beth">
+          <div class="side-by-side">
+            <img src="./assets/beth_face.jpg" alt="Beth Swingler" height="120">
             <p>
-            I like solving problems and learning new things. Philosopy at Cambridge taught me logic. Neuroscience at UCL taught me statistical functions. Software development at General Assembly taught me that I love to code.
+            I like solving problems and learning new things. Philosopy at Cambridge taught me logic. Neuroscience at UCL taught me that I like functions more than experiments. Web development finally taught me that I love to code.
             </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="parallax mandelbrot-04 half-height">
+      </section>
+
+      <section class="static portfolio">
+        <article class="padded-room">
+          <h1>Recent work</h1>
+          <p>You'll have to talk to me about my recent work. It includes such things as...</p>
+          <a href="https://saveall.ai/">Memory project (2020)</a>
+          <li class="tiny">Adversarially spaced repetition</li>
+          <div>
+            <p>Conversational AI (2019)</p>
+            <img src="./assets/MIM_run.jpeg" alt="Conversational AI" height="240px">
+            <li class="tiny">Visualising data from analysis of conversation</li>
           </div>
         </article>
       </section>
@@ -42,31 +63,36 @@
       <section class="parallax mandelbrot-02">
       </section>
 
-      <h1> Portfolio </h1>
       <section class="static portfolio project-01">
-        <article>
+        <article class="black-box">
+          <h1> General Assembly Portfolio (2018)</h1>
           <h3>Project 1: ‘Mastermind’ - A grid-based game (1 week)  JavaScript | CSS | HTML</h3>
           <h1>
             <i class="devicon-javascript-plain" alt="JavaScript"></i>
             <i class="devicon-css3-plain-wordmark"></i>
             <i class="devicon-html5-plain-wordmark"></i>
           </h1
-          <img src="./assets/beth_face.jpg" alt="Beth Swingler" class="beth">
+          <img src="./assets/beth_face.jpg" alt="Beth Swingler">
           <p>
-          This was an independent project. I coded a code-breaking game called Mastermind in JavaScript, which involved comparing two arrays and feeding back two types of clue depending on whether a player’s guesses are included in or identical to elements in a second array.
+          This the very first thing I made using JavaScript! It's super facile when I look back now, but gave
+          me a real taste for playing with arrays!
+          </p><p>
+          I coded a code-breaking game called Mastermind in JavaScript, which involved comparing two arrays and
+          feeding back two types of clue depending on whether a player’s guesses are included in or identical
+          to elements in a second array.
           </p>
           <div>
-            <a href="http://bethswingler.com/WDI-project-01/">Play the game</a>
+            <a href="https://bethylogism.github.io/WDI-project-01/">Play the game</a>
           </div>
           <div>
-            <a href="https://laceswingybethler.github.io/WDI-project-01/">See the code</a>
+            <a href="https://github.com/bethylogism/WDI-project-01">See the code</a>
           </div>
 
         </article>
       </section>
 
       <section class="static portfolio project-02">
-        <article>
+        <article class="black-box">
           <h3>
           Project 2: ‘Eventify’ - RESTful events app (1 day Hackathon)  React | JavaScript | HTML | CSS</h3>
           <h1>
@@ -81,7 +107,7 @@
               <a href="https://react-events-now.herokuapp.com/">Visit the web app</a>
             </div>
             <div>
-               <a href="https://github.com/laceswingybethler/WDI-project-02">
+               <a href="https://github.com/bethylogism/WDI-project-02">
                  See the code
                </a>
           </div>
@@ -90,7 +116,7 @@
       </section>
 
       <section class="static portfolio project-03">
-        <article>
+        <article class="black-box">
           <h3>Project 3: ‘Created.com’ - A full-stack React app (1 week)   React | Node | MongoDB | Express</h3>
           <h1>
             <i class="devicon-javascript-plain"></i>
@@ -107,14 +133,14 @@
             <a href="https://created-wdi.herokuapp.com/">Visit the web app</a>
           </div>
           <div>
-            <a href="https://github.com/laceswingybethler/wdi-project-3">See the code</a>
+            <a href="https://github.com/bethylogism/wdi-project-3">See the code</a>
           </div>
 
         </article>
       </section>
 
       <section class="static portfolio project-04">
-        <article>
+        <article class="black-box">
 
           <h3>Project 4: ‘Sunset Barlevard’ - A Full-stack React/SQL app for finding barcrawls (1 week)   Python | React | PostgreSQL | Flask | Marshmallow |  SQLAlchemy
           </h3>
@@ -133,22 +159,25 @@
             <a href="https://sunset-barlevard.herokuapp.com/">Find a bar crawl</a>
           </div>
           <div>
-            <a href="https://github.com/laceswingybethler/wdi-project-04">See the code</a>
+            <a href="https://github.com/bethylogism/wdi-project-04">See the code</a>
           </div>
 
         </article>
       </section>
+
       <section class="parallax mandelbrot-03">
       </section>
+
       <section class="contact">
-        <article>
+        <article class="black-box">
           <h2>Give me a bell </h2>
           <div>
             <a href="https://www.linkedin.com/in/bethswingler/">LinkedIn</a>
           </div>
+          <p class="tiny">Or just enjoy the mandelbrot set below... :)</p>
 
         </article>
-        <!-- <article>
+        <!-- <article class="black-box">
           Why mandelbrot?
         </article> -->
       </section>
