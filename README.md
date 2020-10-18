@@ -1,5 +1,5 @@
 # laceswingybethler.github.io
 
-`Open index.html`
+`open index.html`
 
 Go.
