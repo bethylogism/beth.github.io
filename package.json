@@ -1,0 +1,10 @@
+{
+  "name": "bethylogism",
+  "version": "1.0.0",
+  "description": "Personal webiste of Beth L. Swingler. So JS, no problems.",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.27.0"
+  }
+}
