@@ -27,7 +27,6 @@ h2 {
   font-size: 1.7rem;
 }
 
-header,
 footer {
   background-color: black;
 }
@@ -43,15 +42,20 @@ a:hover {
   line-height: 1.2em;
 }
 
+ul {
+  text-align: left;
+}
+
+li,
 .tiny {
   font-size: 0.7em;
   line-height: 2em;
 }
 
-.wrapper {
+main {
   /* The height needs to be set to a fixed value for the effect to work.
-   * 100vh is the full height of the viewport. */
-  height: 1000px;
+   * use 100vh -- the full height of the viewport. */
+  height: 100vh;
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
   /* Enable scrolling on the page. */
@@ -63,7 +67,7 @@ a:hover {
 .parallax {
   /* Full height */
   height: 75vh;
-  /* parallax scrolling effect */
+  /* parallax scrolling effect, do not change */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +90,7 @@ a:hover {
 
 .mandelbrot-04 {
   background-image: url("./assets/mandel-04.jpeg");
-  height: 95vh;
+  height: 305vh;
 }
 
 .half-height {
@@ -110,7 +114,7 @@ article {
 .black-box {
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 700px;
-  padding: 15px;
+  padding: 25px;
 }
 
 .padded-room {
@@ -137,12 +141,14 @@ article {
     display: block;
   }
 }
-.about article .side-by-side img {
+.about article .side-by-side .circular {
   border-radius: 100%;
-  margin: 0 10px;
+}
+.about article .side-by-side img {
+  flex-grow: 0.5;
+  margin: 1.5rem;
 }
 .about article .side-by-side p {
-  flex-grow: 0.5;
   margin: 10px;
 }
 
