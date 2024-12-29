@@ -1,8 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  outline: none;
-}
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  outline: none; }
 
 body {
   margin: 0;
@@ -10,45 +9,46 @@ body {
   color: #fff;
   background-color: #0f111b;
   text-align: center;
-  line-height: 1.3em;
-}
+  line-height: 1.3em; }
 
 h1,
 h2 {
-  font-family: "Poiret One", sans-serif;
+  font-family: 'Poiret One', sans-serif;
   text-transform: uppercase;
-  text-align: center;
-}
+  text-align: center; }
 
 h1 {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 h2 {
-  font-size: 1.7rem;
-}
+  font-size: 1.7rem; }
 
 footer {
   background-color: #0f111b;
-}
+  gap: 20px;
+  padding: 10px; }
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+
+.headshots {
+  max-width: 800px; }
 
 a {
   text-decoration: none;
-  color: rgba(139, 206, 241, 0.9);
-}
-a:hover {
-  color: rgba(44, 156, 216, 0.9);
-}
+  color: rgba(139, 206, 241, 0.9); }
+  a:hover {
+    color: rgba(44, 156, 216, 0.9); }
 
 ul {
-  text-align: left;
-}
+  text-align: left; }
 
 li,
 .tiny {
   font-size: 0.9em;
-  line-height: 1.6em;
-}
+  line-height: 1.6em; }
 
 main {
   /* The height needs to be set to a fixed value for the effect to work.
@@ -59,8 +59,7 @@ main {
   /* Enable scrolling on the page. */
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
-}
+  perspective: 2px; }
 
 .parallax {
   /* Full height */
@@ -69,31 +68,25 @@ main {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .hero {
   background-image: url("./assets/mandel-01.jpg");
-  height: 100vh;
-}
+  height: 100vh; }
 
 .mandelbrot-02 {
   background-image: url("./assets/mandel-02.jpg");
-  max-height: 75vh;
-}
+  max-height: 75vh; }
 
 .mandelbrot-03 {
-  background-image: url("./assets/mandel-03.jpg");
-}
+  background-image: url("./assets/mandel-03.jpg"); }
 
 .mandelbrot-04 {
   background-image: url("./assets/mandel-04.jpeg");
-  height: 305vh;
-}
+  height: 305vh; }
 
 .half-height {
-  height: 50vh;
-}
+  height: 50vh; }
 
 section {
   display: flex;
@@ -101,81 +94,62 @@ section {
   position: relative;
   /* The height of the container must be set */
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 article {
   max-width: 700px;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .black-box {
   background-color: rgba(15, 17, 27, 0.6);
   max-width: 700px;
-  padding: 25px;
-}
+  padding: 25px; }
 
 .padded-room {
-  padding: 100px;
-}
-@media screen and (max-width: 750px) {
-  .padded-room {
-    display: block;
-  }
-}
+  padding: 100px; }
+  @media screen and (max-width: 750px) {
+    .padded-room {
+      display: block; } }
 
 .about article {
-  display: flex-wrap;
-}
-.about article h1 {
-  flex-grow: 1;
-}
-.about article .side-by-side {
-  display: flex;
-  padding-bottom: 2rem;
-}
-@media screen and (max-width: 700px) {
+  display: flex-wrap; }
+  .about article h1 {
+    flex-grow: 1; }
   .about article .side-by-side {
-    display: block;
-  }
-}
-.about article .side-by-side p {
-  margin: 10px;
-  text-align: left;
-}
-.about article .side-by-side .left .container {
-  position: relative;
-  display: block;
-  margin: 50% 1.5rem;
-  height: 150px;
-  width: 150px;
-}
-@media screen and (max-width: 700px) {
-  .about article .side-by-side .left .container {
-    margin: 25%;
-  }
-}
-.about article .side-by-side .left img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.about article .side-by-side .left .circular {
-  border-radius: 100%;
-}
-.about article .side-by-side .left .cisticola {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.001;
-  transition: 0.5s ease;
-}
-.about article .side-by-side .left .cisticola:hover {
-  opacity: 1;
-}
+    display: flex;
+    padding-bottom: 2rem; }
+    @media screen and (max-width: 700px) {
+      .about article .side-by-side {
+        display: block; } }
+    .about article .side-by-side p {
+      margin: 10px;
+      text-align: left; }
+    .about article .side-by-side .left .container {
+      position: relative;
+      display: block;
+      margin: 50% 1.5rem;
+      height: 150px;
+      width: 150px; }
+      @media screen and (max-width: 700px) {
+        .about article .side-by-side .left .container {
+          margin: 25%; } }
+    .about article .side-by-side .left img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+    .about article .side-by-side .left .circular {
+      border-radius: 100%; }
+    .about article .side-by-side .left .cisticola {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.001;
+      transition: 0.5s ease; }
+      .about article .side-by-side .left .cisticola:hover {
+        opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
