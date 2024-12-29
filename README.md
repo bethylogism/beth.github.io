@@ -1,7 +1,9 @@
-# laceswingybethler.github.io
+# laceswingybethler.github.io AKA beth.sh
 
 `open index.html`
 
-`sass --watch style.scss style.css`
+Do not edit styles.css directly. Instead, use scss (because, nested) and run:
 
-Et.. C'est le tout.
+`sass --watch style.scss:style.css`
+
+Et voilà.. C'est tout.
