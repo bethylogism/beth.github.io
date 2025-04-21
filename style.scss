@@ -14,7 +14,7 @@ body {
   padding: 0;
   color: #fff;
   background-color: $blackground;
-  // background: linear-gradient(70deg, white, #f69100, #1e2092, #000);
+  background: linear-gradient(70deg, #ffc1, #db8309, #1e2092, rgb(1, 1, 62));
   text-align: center;
   line-height: 1.3em;
 }
@@ -117,8 +117,7 @@ section {
   display: flex;
   /* Children need be absolutely positioned relative to the parent. */
   position: relative;
-  /* The height of the container must be set */
-  // height: 50%;
+  /* The height of the container must be set for the parallax but let's not ruin the dynamic sizing... */
   justify-content: center;
   align-items: center;
 }
@@ -128,23 +127,14 @@ article {
   justify-content: center;
 }
 .black-box {
-  // border: 2px solid blue;
   background-color: rgba($color: $blackground, $alpha: 0.6);
   max-width: 700px;
   padding: 25px;
-  // @media screen and (max-width: 750px) {
-  //   padding: 10px;
-  //   min-height: fit-content;
-  // }
 }
 
 .padded-room {
-  // border: 2px dashed orange;
   padding: 100px;
-  // max-height: 400px;
   @media screen and (max-width: 750px) {
-    // max-height: 90vh;
-    // max-height: 100vh;
     display: block;
   }
 }
